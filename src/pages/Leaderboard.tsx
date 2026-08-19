@@ -1,25 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Trophy, Medal, Search, Flame } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
-// Mock Data for Leaderboard
+// Mock Data for Leaderboard (fallback)
 const MOCK_LEADERBOARD = [
-  { id: 1, name: 'Anvar T.', score: 15420, quizzes: 142, streak: 12 },
-  { id: 2, name: 'Jasur B.', score: 14200, quizzes: 128, streak: 5 },
-  { id: 3, name: 'Madina K.', score: 13850, quizzes: 130, streak: 8 },
-  { id: 4, name: 'Otabek R.', score: 12100, quizzes: 105, streak: 2 },
-  { id: 5, name: 'Sevara A.', score: 11500, quizzes: 98, streak: 4 },
-  { id: 6, name: 'Dilshod M.', score: 10200, quizzes: 85, streak: 1 },
-  { id: 7, name: 'Nigina Y.', score: 9800, quizzes: 72, streak: 0 },
-  { id: 8, name: 'Sardor Q.', score: 9100, quizzes: 64, streak: 3 },
-  { id: 9, name: 'Aziza T.', score: 8500, quizzes: 60, streak: 0 },
-  { id: 10, name: 'Rustam I.', score: 7900, quizzes: 52, streak: 2 },
+  { id: 'm1', name: 'Anvar T.', score: 15420, quizzes: 142, streak: 12 },
+  { id: 'm2', name: 'Jasur B.', score: 14200, quizzes: 128, streak: 5 },
+  { id: 'm3', name: 'Madina K.', score: 13850, quizzes: 130, streak: 8 },
+  { id: 'm4', name: 'Otabek R.', score: 12100, quizzes: 105, streak: 2 },
+  { id: 'm5', name: 'Sevara A.', score: 11500, quizzes: 98, streak: 4 },
 ];
 
 export default function Leaderboard() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [leaderboard, setLeaderboard] = useState<any[]>(MOCK_LEADERBOARD);
   
-  const filteredData = MOCK_LEADERBOARD.filter(user => 
+  useEffect(() => {
+    async function fetchLeaderboard() {
+      const { data, error } = await supabase
+        .from('profiles')
+        .select('*')
+        .order('score', { ascending: false })
+        .limit(10);
+        
+      if (data && data.length > 0) {
+        setLeaderboard(data);
+      }
+    }
+    fetchLeaderboard();
+  }, []);
+
+  const filteredData = leaderboard.filter(user => 
     user.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -57,7 +69,7 @@ export default function Leaderboard() {
       </div>
 
       {/* Top 3 Podium (Visible only when not filtering) */}
-      {!searchTerm && (
+      {!searchTerm && leaderboard.length >= 3 && (
         <div className="flex flex-col md:flex-row justify-center items-end gap-4 md:gap-6 mb-16 pt-10">
           {/* 2nd Place */}
           <motion.div 
@@ -67,12 +79,12 @@ export default function Leaderboard() {
             className="w-full md:w-1/3 flex flex-col items-center order-2 md:order-1"
           >
             <div className="w-20 h-20 rounded-full bg-arena-card border-4 border-[#C0C0C0] flex items-center justify-center mb-4 relative shadow-[0_0_20px_rgba(192,192,192,0.3)] z-10">
-              <span className="text-2xl font-bold text-[#C0C0C0]">{MOCK_LEADERBOARD[1].name.charAt(0)}</span>
+              <span className="text-2xl font-bold text-[#C0C0C0]">{leaderboard[1].name?.charAt(0) || 'U'}</span>
               <div className="absolute -bottom-3 bg-[#C0C0C0] text-arena-bg text-xs font-bold px-2 py-0.5 rounded-full">#2</div>
             </div>
             <div className="bg-arena-card border border-white/5 border-t-[#C0C0C0]/50 rounded-t-xl w-full p-4 text-center pb-8 pt-8 -mt-6">
-              <div className="font-bold text-white text-lg">{MOCK_LEADERBOARD[1].name}</div>
-              <div className="text-arena-accent font-mono font-bold mt-1">{MOCK_LEADERBOARD[1].score}</div>
+              <div className="font-bold text-white text-lg">{leaderboard[1].name}</div>
+              <div className="text-arena-accent font-mono font-bold mt-1">{leaderboard[1].score}</div>
             </div>
           </motion.div>
 
@@ -84,14 +96,14 @@ export default function Leaderboard() {
             className="w-full md:w-1/3 flex flex-col items-center order-1 md:order-2 z-20"
           >
             <div className="w-28 h-28 rounded-full bg-arena-bg border-4 border-[#FFD700] flex items-center justify-center mb-4 relative shadow-[0_0_30px_rgba(255,215,0,0.5)]">
-              <span className="text-4xl font-bold text-[#FFD700]">{MOCK_LEADERBOARD[0].name.charAt(0)}</span>
+              <span className="text-4xl font-bold text-[#FFD700]">{leaderboard[0].name?.charAt(0) || 'U'}</span>
               <div className="absolute -bottom-4 bg-[#FFD700] text-arena-bg text-sm font-bold px-3 py-0.5 rounded-full flex items-center gap-1">
                 <Trophy className="w-3 h-3" /> #1
               </div>
             </div>
             <div className="bg-gradient-to-b from-[#FFD700]/10 to-arena-card border border-[#FFD700]/30 rounded-t-xl w-full p-6 text-center pb-12 pt-10 -mt-8">
-              <div className="font-bold text-white text-xl">{MOCK_LEADERBOARD[0].name}</div>
-              <div className="text-[#FFD700] font-mono font-bold text-lg mt-1 drop-shadow-[0_0_5px_rgba(255,215,0,0.5)]">{MOCK_LEADERBOARD[0].score}</div>
+              <div className="font-bold text-white text-xl">{leaderboard[0].name}</div>
+              <div className="text-[#FFD700] font-mono font-bold text-lg mt-1 drop-shadow-[0_0_5px_rgba(255,215,0,0.5)]">{leaderboard[0].score}</div>
             </div>
           </motion.div>
 
@@ -103,12 +115,12 @@ export default function Leaderboard() {
             className="w-full md:w-1/3 flex flex-col items-center order-3 md:order-3"
           >
             <div className="w-16 h-16 rounded-full bg-arena-card border-4 border-[#CD7F32] flex items-center justify-center mb-4 relative shadow-[0_0_15px_rgba(205,127,50,0.3)] z-10">
-              <span className="text-xl font-bold text-[#CD7F32]">{MOCK_LEADERBOARD[2].name.charAt(0)}</span>
+              <span className="text-xl font-bold text-[#CD7F32]">{leaderboard[2].name?.charAt(0) || 'U'}</span>
               <div className="absolute -bottom-2 bg-[#CD7F32] text-arena-bg text-xs font-bold px-2 py-0.5 rounded-full">#3</div>
             </div>
             <div className="bg-arena-card border border-white/5 border-t-[#CD7F32]/50 rounded-t-xl w-full p-4 text-center pb-6 pt-6 -mt-4">
-              <div className="font-bold text-white text-base">{MOCK_LEADERBOARD[2].name}</div>
-              <div className="text-arena-accent font-mono font-bold mt-1">{MOCK_LEADERBOARD[2].score}</div>
+              <div className="font-bold text-white text-base">{leaderboard[2].name}</div>
+              <div className="text-arena-accent font-mono font-bold mt-1">{leaderboard[2].score}</div>
             </div>
           </motion.div>
         </div>

@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle2, XCircle, Flame } from 'lucide-react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { MATH_QUIZ } from '../data/mockData';
+import { supabase } from '../lib/supabase';
+import { useAuthStore } from '../store/useAuthStore';
 
 const TOTAL_TIME = 20; // seconds per question
 
@@ -33,6 +35,7 @@ function ScoreCounter({ from, to }: { from: number, to: number }) {
 export default function Quiz() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { user, setUser } = useAuthStore();
   
   const [currentQIndex, setCurrentQIndex] = useState(0);
   const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
@@ -92,7 +95,7 @@ export default function Quiz() {
     }
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (currentQIndex < MATH_QUIZ.questions.length - 1) {
       setCurrentQIndex(prev => prev + 1);
       setTimeLeft(TOTAL_TIME);
@@ -100,7 +103,28 @@ export default function Quiz() {
       setIsAnswered(false);
       setPrevScore(score);
     } else {
-      // Quiz finished, save to local storage and navigate to result
+      // Quiz finished, save to DB if logged in
+      const total = stats.correct + stats.wrong;
+      const accuracy = total > 0 ? Math.round((stats.correct / total) * 100) : 0;
+
+      if (user) {
+        try {
+          await supabase.from('results').insert({
+            user_id: user.id,
+            quiz_id: id || 'unknown',
+            score: score,
+            accuracy: accuracy
+          });
+
+          // Update user profile score locally and in DB
+          const newScore = user.score + score;
+          await supabase.from('profiles').update({ score: newScore }).eq('id', user.id);
+          setUser({ ...user, score: newScore });
+        } catch (e) {
+          console.error("Xatolik", e);
+        }
+      }
+
       localStorage.setItem('lastQuizResult', JSON.stringify({ score, stats, subject: MATH_QUIZ.title }));
       navigate(`/quiz/${id}/result`);
     }

@@ -1,31 +1,87 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { LogIn, UserPlus, Mail, Lock, User, Shield } from 'lucide-react';
-import { useAuthStore } from '../store/useAuthStore';
+import { LogIn, UserPlus, Mail, Lock, User, Shield, AlertCircle } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
 export default function Auth() {
   const [isLogin, setIsLogin] = useState(true);
   const [role, setRole] = useState<'student' | 'teacher'>('student');
-  const navigate = useNavigate();
-  const login = useAuthStore(state => state.login);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [successMsg, setSuccessMsg] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock authentication
-    login({
-      id: '1',
-      name: isLogin ? 'Test O\'quvchi' : 'Yangi O\'quvchi',
-      email: 'test@example.com',
-      role: role,
-      score: 1250,
-      streak: 3
-    });
-    navigate('/');
+    setLoading(true);
+    setError(null);
+    setSuccessMsg(null);
+
+    try {
+      if (isLogin) {
+        // Handle Login
+        const { error } = await supabase.auth.signInWithPassword({
+          email,
+          password,
+        });
+        if (error) throw error;
+        
+        // Wait for session to be established in useAuthStore automatically
+        navigate('/');
+      } else {
+        // Handle Sign Up
+        const { data: authData, error: authError } = await supabase.auth.signUp({
+          email,
+          password,
+          options: {
+            data: {
+              name,
+              role,
+            }
+          }
+        });
+        
+        if (authError) throw authError;
+
+        // If email confirmation is disabled, user is immediately logged in
+        if (authData.session) {
+          // Create profile record
+          const { error: profileError } = await supabase.from('profiles').insert([
+            {
+              id: authData.user!.id,
+              name,
+              role,
+              score: 0,
+              streak: 0
+            }
+          ]);
+          
+          if (profileError) {
+            console.error("Profile yaratishda xatolik:", profileError);
+            // Don't throw, they are logged in anyway. They just might lack a profile record
+          }
+          
+          navigate('/');
+        } else {
+          // Email confirmation is required
+          setSuccessMsg("Ro'yxatdan o'tish muvaffaqiyatli! Tasdiqlash havolasi emailingizga yuborildi.");
+          setIsLogin(true);
+        }
+      }
+    } catch (err: any) {
+      setError(err.message || 'Xatolik yuz berdi.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <div className="w-full flex-1 flex items-center justify-center p-4">
+    <div className="w-full flex-1 flex items-center justify-center p-4 mt-10">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -46,6 +102,20 @@ export default function Auth() {
 
           <form onSubmit={handleSubmit} className="space-y-4 relative z-10">
             
+            {error && (
+              <div className="p-3 bg-red-500/10 border border-red-500/50 rounded-lg text-red-500 text-sm flex items-center gap-2">
+                <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                <p>{error}</p>
+              </div>
+            )}
+            
+            {successMsg && (
+              <div className="p-3 bg-green-500/10 border border-green-500/50 rounded-lg text-green-500 text-sm flex items-center gap-2">
+                <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                <p>{successMsg}</p>
+              </div>
+            )}
+
             <AnimatePresence mode="wait">
               {!isLogin && (
                 <motion.div
@@ -59,7 +129,9 @@ export default function Auth() {
                     <input 
                       type="text" 
                       placeholder="To'liq ismingiz" 
-                      required
+                      required={!isLogin}
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       className="w-full bg-arena-bg border border-white/10 rounded-lg py-3 pl-10 pr-4 text-white focus:outline-none focus:border-arena-accent focus:ring-1 focus:ring-arena-accent transition-all"
                     />
                   </div>
@@ -90,6 +162,8 @@ export default function Auth() {
                 type="email" 
                 placeholder="Elektron pochta" 
                 required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-arena-bg border border-white/10 rounded-lg py-3 pl-10 pr-4 text-white focus:outline-none focus:border-arena-accent focus:ring-1 focus:ring-arena-accent transition-all"
               />
             </div>
@@ -100,6 +174,8 @@ export default function Auth() {
                 type="password" 
                 placeholder="Parol" 
                 required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 className="w-full bg-arena-bg border border-white/10 rounded-lg py-3 pl-10 pr-4 text-white focus:outline-none focus:border-arena-accent focus:ring-1 focus:ring-arena-accent transition-all"
               />
             </div>
@@ -114,10 +190,11 @@ export default function Auth() {
 
             <button 
               type="submit"
-              className="w-full py-4 mt-2 bg-arena-accent text-white font-display font-bold rounded-lg hover:bg-arena-accentHover transition-colors flex items-center justify-center gap-2 uppercase tracking-widest shadow-glow"
+              disabled={loading}
+              className={`w-full py-4 mt-2 bg-arena-accent text-white font-display font-bold rounded-lg hover:bg-arena-accentHover transition-colors flex items-center justify-center gap-2 uppercase tracking-widest shadow-glow ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
             >
               {isLogin ? <LogIn className="w-5 h-5" /> : <UserPlus className="w-5 h-5" />}
-              {isLogin ? 'Kirish' : 'Ro\'yxatdan O\'tish'}
+              {loading ? 'Kutib turing...' : (isLogin ? 'Kirish' : 'Ro\'yxatdan O\'tish')}
             </button>
           </form>
 
@@ -125,7 +202,11 @@ export default function Auth() {
             <p className="text-sm text-arena-textMuted">
               {isLogin ? 'Hali hisobingiz yo\'qmi?' : 'Allaqachon hisobingiz bormi?'}
               <button 
-                onClick={() => setIsLogin(!isLogin)}
+                onClick={() => {
+                  setIsLogin(!isLogin);
+                  setError(null);
+                  setSuccessMsg(null);
+                }}
                 className="ml-2 text-white font-medium hover:text-arena-accent transition-colors focus:outline-none"
               >
                 {isLogin ? 'Ro\'yxatdan O\'tish' : 'Kirish'}

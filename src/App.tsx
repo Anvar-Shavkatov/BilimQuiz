@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -13,8 +13,15 @@ import NotFound from './pages/NotFound';
 import Profile from './pages/Profile';
 import TeacherDashboard from './pages/TeacherDashboard';
 import Leaderboard from './pages/Leaderboard';
+import { useAuthStore } from './store/useAuthStore';
 
 function App() {
+  const initialize = useAuthStore((state) => state.initialize);
+
+  useEffect(() => {
+    initialize();
+  }, [initialize]);
+
   return (
     <Router>
       <div className="min-h-screen bg-arena-bg text-arena-text font-sans relative flex flex-col selection:bg-arena-accent/30">
