@@ -1,0 +1,497 @@
+{
+  "title": "100 Qadam: Bilimlar Cho'qqisi",
+  "subject_id": "mega_quiz_100",
+  "level": "Aralash (Oson -> Qiyin)",
+  "questions": [
+    {
+      "text": "Qaysi sayyora 'Qizil sayyora' deb ataladi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Venera\"},{\"id\":\"b\",\"text\":\"Mars\"},{\"id\":\"c\",\"text\":\"Yupiter\"},{\"id\":\"d\",\"text\":\"Saturn\"}]",
+      "correct_option": "b",
+      "explanation": "Mars sirtida temir oksidi ko'p bo'lgani uchun u qizg'ish rangda ko'rinadi va 'Qizil sayyora' deb ataladi.",
+      "order_num": 1
+    },
+    {
+      "text": "Kompyuterning 'miyasi' deb qaysi qurilmaga aytiladi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Klaviatura\"},{\"id\":\"b\",\"text\":\"Monitor\"},{\"id\":\"c\",\"text\":\"Protsessor (CPU)\"},{\"id\":\"d\",\"text\":\"Sichqoncha\"}]",
+      "correct_option": "c",
+      "explanation": "Protsessor barcha hisoblash va mantiqiy amallarni bajarishi sababli kompyuterning miyasi hisoblanadi.",
+      "order_num": 2
+    },
+    {
+      "text": "Yer Quyosh atrofini to'liq bir marta aylanib chiqishi uchun qancha vaqt ketadi?",
+      "options": "[{\"id\":\"a\",\"text\":\"1 oy\"},{\"id\":\"b\",\"text\":\"24 soat\"},{\"id\":\"c\",\"text\":\"365 kun (1 yil)\"},{\"id\":\"d\",\"text\":\"100 kun\"}]",
+      "correct_option": "c",
+      "explanation": "Yer Quyosh atrofini taxminan 365 kun-u 6 soatda to'liq bir marta aylanib chiqadi.",
+      "order_num": 3
+    },
+    {
+      "text": "Dunyodagi eng katta okean qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Atlantika okeani\"},{\"id\":\"b\",\"text\":\"Hind okeani\"},{\"id\":\"c\",\"text\":\"Tinch okeani\"},{\"id\":\"d\",\"text\":\"Shimoliy Muz okeani\"}]",
+      "correct_option": "c",
+      "explanation": "Tinch okeani maydoni bo'yicha Yerdagi eng katta va eng chuqur okeandir.",
+      "order_num": 4
+    },
+    {
+      "text": "Internet tarmog'idagi 'WWW' qisqartmasi nimani anglatadi?",
+      "options": "[{\"id\":\"a\",\"text\":\"World Wide Web\"},{\"id\":\"b\",\"text\":\"World Web Wide\"},{\"id\":\"c\",\"text\":\"Wide World Web\"},{\"id\":\"d\",\"text\":\"Web World Wide\"}]",
+      "correct_option": "a",
+      "explanation": "'WWW' ingliz tilidan tarjima qilinganda 'World Wide Web' (Butunjahon o'rgimchak turi) degan ma'noni anglatadi.",
+      "order_num": 5
+    },
+    {
+      "text": "Suvning kimyoviy formulasi qanday?",
+      "options": "[{\"id\":\"a\",\"text\":\"CO2\"},{\"id\":\"b\",\"text\":\"H2O\"},{\"id\":\"c\",\"text\":\"O2\"},{\"id\":\"d\",\"text\":\"NaCl\"}]",
+      "correct_option": "b",
+      "explanation": "Suv ikkita vodorod va bitta kislorod atomidan tashkil topgani uchun H2O shaklida yoziladi.",
+      "order_num": 6
+    },
+    {
+      "text": "Axborotning eng kichik o'lchov birligi nima?",
+      "options": "[{\"id\":\"a\",\"text\":\"Bayt\"},{\"id\":\"b\",\"text\":\"Kilobayt\"},{\"id\":\"c\",\"text\":\"Bit\"},{\"id\":\"d\",\"text\":\"Megabayt\"}]",
+      "correct_option": "c",
+      "explanation": "Bit raqamli texnikada axborotning eng kichik o'lchov birligi bo'lib, 0 yoki 1 qiymatni oladi.",
+      "order_num": 7
+    },
+    {
+      "text": "O'zbekiston Respublikasining poytaxti qaysi shahar?",
+      "options": "[{\"id\":\"a\",\"text\":\"Samarqand\"},{\"id\":\"b\",\"text\":\"Buxoro\"},{\"id\":\"c\",\"text\":\"Toshkent\"},{\"id\":\"d\",\"text\":\"Namangan\"}]",
+      "correct_option": "c",
+      "explanation": "O'zbekiston Respublikasining bosh shahri va poytaxti Toshkent hisoblanadi.",
+      "order_num": 8
+    },
+    {
+      "text": "Inson tanasidagi eng katta organ (a'zo) qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Jigar\"},{\"id\":\"b\",\"text\":\"Yurak\"},{\"id\":\"c\",\"text\":\"Teri\"},{\"id\":\"d\",\"text\":\"O'pka\"}]",
+      "correct_option": "c",
+      "explanation": "Inson derisining umumiy maydoni va vazni boshqa barcha a'zolardan katta bo'lib, eng katta organ sanaladi.",
+      "order_num": 9
+    },
+    {
+      "text": "Dunyodagi eng baland tog' cho'qqisi qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Kilikmandjaro\"},{\"id\":\"b\",\"text\":\"Everest (Jomolungma)\"},{\"id\":\"c\",\"text\":\"Elbrus\"},{\"id\":\"d\",\"text\":\"Alp\"}]",
+      "correct_option": "b",
+      "explanation": "Everest dengiz sathidan 8848 metr balandlikda joylashgan eng baland cho'qqidir.",
+      "order_num": 10
+    },
+    {
+      "text": "O'simliklar quyosh nuridan foydalanib oziq va kislorod hosil qilish jarayoni nima deyiladi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Nafas olish\"},{\"id\":\"b\",\"text\":\"Fotosintez\"},{\"id\":\"c\",\"text\":\"Bug'lanish\"},{\"id\":\"d\",\"text\":\"Erish\"}]",
+      "correct_option": "b",
+      "explanation": "O'simliklar barglaridagi xlorofill yordamida quyosh nurini qabul qilib fotosintez jarayonini amalga oshiradi.",
+      "order_num": 11
+    },
+    {
+      "text": "Kompyuterda matn yozish va tahrirlash uchun mo'ljallangan mashhur dastur qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Microsoft Word\"},{\"id\":\"b\",\"text\":\"Paint\"},{\"id\":\"c\",\"text\":\"Calculator\"},{\"id\":\"d\",\"text\":\"Photoshop\"}]",
+      "correct_option": "a",
+      "explanation": "Microsoft Word eng keng tarqalgan matn muharriri dasturlaridan biridir.",
+      "order_num": 12
+    },
+    {
+      "text": "Kamalakda nechta rang bor?",
+      "options": "[{\"id\":\"a\",\"text\":\"5 ta\"},{\"id\":\"b\",\"text\":\"6 ta\"},{\"id\":\"c\",\"text\":\"7 ta\"},{\"id\":\"d\",\"text\":\"10 ta\"}]",
+      "correct_option": "c",
+      "explanation": "Kamalak 7 ta asosiy rangdan (qizil, zargaldak, sariq, yashil, moviy, ko'k, binafsha) iborat.",
+      "order_num": 13
+    },
+    {
+      "text": "Jismlarni Yerga tortib turadigan kuch nima deyiladi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Ishqalanish kuchi\"},{\"id\":\"b\",\"text\":\"Gravitatsiya (Tortishish kuchi)\"},{\"id\":\"c\",\"text\":\"Elastiklik kuchi\"},{\"id\":\"d\",\"text\":\"Elektr kuchi\"}]",
+      "correct_option": "b",
+      "explanation": "Gravitatsiya kuchi tufayli barcha jismlar Yer markaziga tortilib turadi.",
+      "order_num": 14
+    },
+    {
+      "text": "Kenguru tabiatan qaysi qit'ada yashaydi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Afrika\"},{\"id\":\"b\",\"text\":\"Osiyo\"},{\"id\":\"c\",\"text\":\"Avstraliya\"},{\"id\":\"d\",\"text\":\"Yevropa\"}]",
+      "correct_option": "c",
+      "explanation": "Kengurular faqat Avstraliya materigida tabiiy ravishda uchraydigan xaltali hayvonlardir.",
+      "order_num": 15
+    },
+    {
+      "text": "Internetdagi veb-saytlarni ko'rish uchun ishlatiladigan dastur nima deyiladi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Brauzer\"},{\"id\":\"b\",\"text\":\"Antivirus\"},{\"id\":\"c\",\"text\":\"Drayver\"},{\"id\":\"d\",\"text\":\"Fayl\"}]",
+      "correct_option": "a",
+      "explanation": "Chrome, Firefox, Safari kabi dasturlar brauzer deb ataladi va internet sahifalarini ochadi.",
+      "order_num": 16
+    },
+    {
+      "text": "Gaz holatidagi suv nima deb ataladi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Muz\"},{\"id\":\"b\",\"text\":\"Suv bug'i\"},{\"id\":\"c\",\"text\":\"Qor\"},{\"id\":\"d\",\"text\":\"Yomg'ir\"}]",
+      "correct_option": "b",
+      "explanation": "Suv qizdirilganda gaz holatiga o'tadi va suv bug'i hosil bo'ladi.",
+      "order_num": 17
+    },
+    {
+      "text": "Qaysi qush orqaga qarab ucha oladigan yagona qushdir?",
+      "options": "[{\"id\":\"a\",\"text\":\"Qarshig'ay\"},{\"id\":\"b\",\"text\":\"Chumchuq\"},{\"id\":\"c\",\"text\":\"Kolibri\"},{\"id\":\"d\",\"text\":\"Qaldirg'och\"}]",
+      "correct_option": "c",
+      "explanation": "Kolibri qanotlarining o'zgacha tuzilishi sababli orqaga qarab ucha oladigan yagona qushdir.",
+      "order_num": 18
+    },
+    {
+      "text": "'Python' axborot texnologiyalari (IT) sohasida nima?",
+      "options": "[{\"id\":\"a\",\"text\":\"Kompyuter virusi\"},{\"id\":\"b\",\"text\":\"Dasturlash tili\"},{\"id\":\"c\",\"text\":\"Operatsion sistema\"},{\"id\":\"d\",\"text\":\"Klaviatura turi\"}]",
+      "correct_option": "b",
+      "explanation": "Python — o'rganish uchun oson va mashhur bo'lgan dasturlash tilidir.",
+      "order_num": 19
+    },
+    {
+      "text": "Quyosh tizimidagi eng katta sayyora qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Yer\"},{\"id\":\"b\",\"text\":\"Mars\"},{\"id\":\"c\",\"text\":\"Yupiter\"},{\"id\":\"d\",\"text\":\"Neptun\"}]",
+      "correct_option": "c",
+      "explanation": "Yupiter Quyosh tizimidagi eng katta va eng ulkan gaz giganti hisoblanadi.",
+      "order_num": 20
+    },
+    {
+      "text": "Quruqlikda eng tez yuguradigan hayvon qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Sher\"},{\"id\":\"b\",\"text\":\"Gepard\"},{\"id\":\"c\",\"text\":\"Qoplon\"},{\"id\":\"d\",\"text\":\"Bo'ri\"}]",
+      "correct_option": "b",
+      "explanation": "Gepard qisqa masofada soatiga 100-120 km tezlikka erisha oladigan eng tezkor hayvondir.",
+      "order_num": 21
+    },
+    {
+      "text": "Elektron pochta nima deb ataladi?",
+      "options": "[{\"id\":\"a\",\"text\":\"E-mail\"},{\"id\":\"b\",\"text\":\"SMS\"},{\"id\":\"c\",\"text\":\"Chat\"},{\"id\":\"d\",\"text\":\"Post\"}]",
+      "correct_option": "a",
+      "explanation": "E-mail inglizcha 'Electronic mail' so'zidan olingan bo'lib, elektron pochtani anglatadi.",
+      "order_num": 22
+    },
+    {
+      "text": "Inson tanasida necha juft qovurg'a bor?",
+      "options": "[{\"id\":\"a\",\"text\":\"10 juft\"},{\"id\":\"b\",\"text\":\"12 juft\"},{\"id\":\"c\",\"text\":\"14 juft\"},{\"id\":\"d\",\"text\":\"8 juft\"}]",
+      "correct_option": "b",
+      "explanation": "Inson ko'krak qafasini hosil qiluvchi 12 juft (jami 24 ta) qovurg'aga ega.",
+      "order_num": 23
+    },
+    {
+      "text": "Oq ayiqlar (qutb ayiqlari) asosan qayerda yashaydi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Antarktidada\"},{\"id\":\"b\",\"text\":\"Arktikada (Shimoliy qutb)\"},{\"id\":\"c\",\"text\":\"Avstraliyada\"},{\"id\":\"d\",\"text\":\"Sahroyi kabirda\"}]",
+      "correct_option": "b",
+      "explanation": "Oq ayiqlar Shimoliy muz okeani va unga tutash Arktika hududlarida yashaydi.",
+      "order_num": 24
+    },
+    {
+      "text": "Dunyoda nechta kontinent (qit'a) mavjud?",
+      "options": "[{\"id\":\"a\",\"text\":\"5 ta\"},{\"id\":\"b\",\"text\":\"6 ta\"},{\"id\":\"c\",\"text\":\"7 ta\"},{\"id\":\"d\",\"text\":\"8 ta\"}]",
+      "correct_option": "b",
+      "explanation": "Dunyoda 6 ta qit'a bor: Yevroosiyo, Afrika, Shimoliy Amerika, Janubiy Amerika, Avstraliya, Antarktida.",
+      "order_num": 25
+    },
+    {
+      "text": "Elektr lampochkani amalda qulay holatga keltirib ixtiro qilgan mashhur olim kim?",
+      "options": "[{\"id\":\"a\",\"text\":\"Albert Eynshteyn\"},{\"id\":\"b\",\"text\":\"Tomas Edison\"},{\"id\":\"c\",\"text\":\"Isaak Nyuton\"},{\"id\":\"d\",\"text\":\"Galileo Galilei\"}]",
+      "correct_option": "b",
+      "explanation": "Tomas Edison qizdirish lampochkasini takomillashtirib, ommaviy foydalanishga topshirgan.",
+      "order_num": 26
+    },
+    {
+      "text": "Inson yuragining asosiy vazifasi nimadan iborat?",
+      "options": "[{\"id\":\"a\",\"text\":\"Ovqatni hazm qilish\"},{\"id\":\"b\",\"text\":\"Qonni tana bo'ylab haydash\"},{\"id\":\"c\",\"text\":\"Havo tozalash\"},{\"id\":\"d\",\"text\":\"Axborotni saqlash\"}]",
+      "correct_option": "b",
+      "explanation": "Yurak nasos vazifasini bajarib, qon tomirlari orqali qonni butun tanaga yetkazib beradi.",
+      "order_num": 27
+    },
+    {
+      "text": "Klaviatura kompyuterga nima uchun kerak?",
+      "options": "[{\"id\":\"a\",\"text\":\"Ovoz chiqarish uchun\"},{\"id\":\"b\",\"text\":\"Rasm ko'rsatish uchun\"},{\"id\":\"c\",\"text\":\"Matn va buyruqlarni kiritish uchun\"},{\"id\":\"d\",\"text\":\"Chop etish uchun\"}]",
+      "correct_option": "c",
+      "explanation": "Klaviatura — kompyuterga matnli axborot va buyruqlarni kirituvchi asosiy qurilma.",
+      "order_num": 28
+    },
+    {
+      "text": "Dunyodagi eng katta sutemizuvchi jonivor qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Fil\"},{\"id\":\"b\",\"text\":\"Ko'k kit\"},{\"id\":\"c\",\"text\":\"Akkula\"},{\"id\":\"d\",\"text\":\"Jirafa\"}]",
+      "correct_option": "b",
+      "explanation": "Ko'k kit Yer yuzida mavjud bo me'yoriy va eng katta hayvon (sutemizuvchi) hisoblanadi.",
+      "order_num": 29
+    },
+    {
+      "text": "Bir yilda nechta fasl bor?",
+      "options": "[{\"id\":\"a\",\"text\":\"2 ta\"},{\"id\":\"b\",\"text\":\"3 ta\"},{\"id\":\"c\",\"text\":\"4 ta\"},{\"id\":\"d\",\"text\":\"12 ta\"}]",
+      "correct_option": "c",
+      "explanation": "Bir yil 4 fasldan iborat: bahor, yoz, kuz va qish.",
+      "order_num": 30
+    },
+    {
+      "text": "Python dasturlash tilining yaratuvchisi kim?",
+      "options": "[{\"id\":\"a\",\"text\":\"James Gosling\"},{\"id\":\"b\",\"text\":\"Guido van Rossum\"},{\"id\":\"c\",\"text\":\"Dennis Ritchie\"},{\"id\":\"d\",\"text\":\"Bjarne Stroustrup\"}]",
+      "correct_option": "b",
+      "explanation": "Python tili 1989-yilda gollandiyalik dasturchi Guido van Rossum tomonidan yaratilgan.",
+      "order_num": 31
+    },
+    {
+      "text": "HTML qisqartmasining to'liq ma'nosi nima?",
+      "options": "[{\"id\":\"a\",\"text\":\"HyperText Markup Language\"},{\"id\":\"b\",\"text\":\"High Tech Modern Language\"},{\"id\":\"c\",\"text\":\"HyperTransfer Machine Language\"},{\"id\":\"d\",\"text\":\"Home Tool Markup Language\"}]",
+      "correct_option": "a",
+      "explanation": "HTML - HyperText Markup Language bo'lib, veb-sahifalarni strukturash uchun ishlatiladigan belgilash tilidir.",
+      "order_num": 32
+    },
+    {
+      "text": "Kompyuter xotirasidagi eng kichik axborot o'lchov birligi nima?",
+      "options": "[{\"id\":\"a\",\"text\":\"Bayt\"},{\"id\":\"b\",\"text\":\"Kilobayt\"},{\"id\":\"c\",\"text\":\"Bit\"},{\"id\":\"d\",\"text\":\"Nibble\"}]",
+      "correct_option": "c",
+      "explanation": "Bit eng kichik axborot birligi bo'lib, u 0 yoki 1 qiymatini oladi.",
+      "order_num": 33
+    },
+    {
+      "text": "Tarixdagi birinchi dasturchi kim hisoblanadi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Alan Turing\"},{\"id\":\"b\",\"text\":\"Ada Lovelace\"},{\"id\":\"c\",\"text\":\"Grace Hopper\"},{\"id\":\"d\",\"text\":\"Charles Babbage\"}]",
+      "correct_option": "b",
+      "explanation": "Ada Lovelace Charlz Bebbijning mexanik kompyuteri uchun birinchi algoritmni yozgan va tarixdagi birinchi dasturchi hisoblanadi.",
+      "order_num": 34
+    },
+    {
+      "text": "HTTP protokolidagi '404' xatolik kodi nimani anglatadi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Server ichki xatosi\"},{\"id\":\"b\",\"text\":\"Ruxsat etilmagan kirish\"},{\"id\":\"c\",\"text\":\"Sahifa topilmadi\"},{\"id\":\"d\",\"text\":\"So'rov vaqti tugadi\"}]",
+      "correct_option": "c",
+      "explanation": "404 Not Found xatosi so'ralgan resurs serverda topilmaganini bildiradi.",
+      "order_num": 35
+    },
+    {
+      "text": "Linux operatsion tizimi yadrosini (kernel) kim yaratgan?",
+      "options": "[{\"id\":\"a\",\"text\":\"Bill Gates\"},{\"id\":\"b\",\"text\":\"Steve Jobs\"},{\"id\":\"c\",\"text\":\"Linus Torvalds\"},{\"id\":\"d\",\"text\":\"Ken Thompson\"}]",
+      "correct_option": "c",
+      "explanation": "Linux yadrosi 1991-yilda finlyandiyalik talaba Linus Torvalds tomonidan ishlab chiqilgan.",
+      "order_num": 36
+    },
+    {
+      "text": "RAM (Random Access Memory) xotirasining asosiy xususiyati nimada?",
+      "options": "[{\"id\":\"a\",\"text\":\"Ma'lumotlarni doimiy saqlaydi\"},{\"id\":\"b\",\"text\":\"Tok o'chishi bilan ma'lumotlar o'chib ketadi\"},{\"id\":\"c\",\"text\":\"Faqat o'qish uchun mo'ljallangan\"},{\"id\":\"d\",\"text\":\"Faqat grafik jarayonlarni qayta ishlaydi\"}]",
+      "correct_option": "b",
+      "explanation": "RAM - bu tezkor va vaqtinchalik xotira bo'lib, elektr ta'minoti uzilganda undagi ma'lumotlar o'chadi.",
+      "order_num": 37
+    },
+    {
+      "text": "IPv4 manzili nechta bitdan iborat?",
+      "options": "[{\"id\":\"a\",\"text\":\"16 bit\"},{\"id\":\"b\",\"text\":\"32 bit\"},{\"id\":\"c\",\"text\":\"64 bit\"},{\"id\":\"d\",\"text\":\"128 bit\"}]",
+      "correct_option": "b",
+      "explanation": "IPv4 manzillari 32 bitli bo'lib, nuqta bilan ajratilgan 4 ta oktetdan iborat.",
+      "order_num": 38
+    },
+    {
+      "text": "Qaysi ma'lumotlar tuzilmasi LIFO (Last In, First Out) tamoyili bo'yicha ishlaydi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Queue (Navbat)\"},{\"id\":\"b\",\"text\":\"Stack (Stek)\"},{\"id\":\"c\",\"text\":\"Array (Massiv)\"},{\"id\":\"d\",\"text\":\"Graph (Graf)\"}]",
+      "correct_option": "b",
+      "explanation": "Stek (Stack) oxirgi kirgan ma'lumot birinchi bo'lib chiqadigan (LIFO) strukturasiga ega.",
+      "order_num": 39
+    },
+    {
+      "text": "Sun'iy intellekt sohasidagi 'Turing testi' nimani aniqlash uchun ishlatiladi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Dasturdagi xatoliklar sonini\"},{\"id\":\"b\",\"text\":\"Kompyuterning hisoblash tezligini\"},{\"id\":\"c\",\"text\":\"Mashinaning inson kabi fikrlay olish qobiliyatini\"},{\"id\":\"d\",\"text\":\"Tarmoq xavfsizligi darajasini\"}]",
+      "correct_option": "c",
+      "explanation": "Turing testi mashinaning insoniy intellektga xos muloqot qobiliyatini tekshirish uchun mo'ljallangan.",
+      "order_num": 40
+    },
+    {
+      "text": "Yorug'likning vakuumdagi tezligi taxminan qancha?",
+      "options": "[{\"id\":\"a\",\"text\":\"150,000 km/s\"},{\"id\":\"b\",\"text\":\"300,000 km/s\"},{\"id\":\"c\",\"text\":\"500,000 km/s\"},{\"id\":\"d\",\"text\":\"1,000,000 km/s\"}]",
+      "correct_option": "b",
+      "explanation": "Yorug'lik vakuumda soniyasiga taxminan 299,792 km (yaxlitlanganda 300,000 km/s) tezlikda harakatlanadi.",
+      "order_num": 41
+    },
+    {
+      "text": "Quyosh tizimidagi eng katta planeta qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Saturn\"},{\"id\":\"b\",\"text\":\"Neptun\"},{\"id\":\"c\",\"text\":\"Yupiter\"},{\"id\":\"d\",\"text\":\"Uran\"}]",
+      "correct_option": "c",
+      "explanation": "Yupiter Quyosh tizimidagi eng gigante va eng og'ir sayyoradir.",
+      "order_num": 42
+    },
+    {
+      "text": "Kimyoviy elementlar davriy jadvalida Oltinning belgisi qanday?",
+      "options": "[{\"id\":\"a\",\"text\":\"Ag\"},{\"id\":\"b\",\"text\":\"Fe\"},{\"id\":\"c\",\"text\":\"Au\"},{\"id\":\"d\",\"text\":\"Pb\"}]",
+      "correct_option": "c",
+      "explanation": "Oltin lotinchada 'Aurum' deb atalgani uchun uning belgisi Au.",
+      "order_num": 43
+    },
+    {
+      "text": "Inson DNK zanjiri qanday tuzilishga ega?",
+      "options": "[{\"id\":\"a\",\"text\":\"Bir qatlamli zanjir\"},{\"id\":\"b\",\"text\":\"Ikkilangan spiral\"},{\"id\":\"c\",\"text\":\"Uchburchak shakl\"},{\"id\":\"d\",\"text\":\"Halka shaklida\"}]",
+      "correct_option": "b",
+      "explanation": "DNK tuzilishi 1953-yilda Uotson va Krik tomonidan aniqlangan ikkilangan spiral shakliga ega.",
+      "order_num": 44
+    },
+    {
+      "text": "Absolyut nol harorat Selsiy shkalasida qanchaga teng?",
+      "options": "[{\"id\":\"a\",\"text\":\"0 °C\"},{\"id\":\"b\",\"text\":\"-100 °C\"},{\"id\":\"c\",\"text\":\"-273.15 °C\"},{\"id\":\"d\",\"text\":\"-459.67 °C\"}]",
+      "correct_option": "c",
+      "explanation": "Absolyut nol (0 Kelvin) Selsiy bo'yicha -273.15 °C ga teng bo'lib, modda zarrachalarining harakati to'xtaydigan eng past nazariy haroratdir.",
+      "order_num": 45
+    },
+    {
+      "text": "O'simliklarda quyosh nuridan energiya hosil qilish jarayoni nima deyiladi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Nafas olish\"},{\"id\":\"b\",\"text\":\"Fotosintez\"},{\"id\":\"c\",\"text\":\"Transpiratsiya\"},{\"id\":\"d\",\"text\":\"Fermentatsiya\"}]",
+      "correct_option": "b",
+      "explanation": "Fotosintez - quyosh energiyasi yordamida karbonat angidrid va suvdan organik moddalar va kislorod hosil bo'lish jarayoni.",
+      "order_num": 46
+    },
+    {
+      "text": "Quyosh tizimidagi eng issiq planeta qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Merkuriy\"},{\"id\":\"b\",\"text\":\"Venera\"},{\"id\":\"c\",\"text\":\"Mars\"},{\"id\":\"d\",\"text\":\"Yupiter\"}]",
+      "correct_option": "b",
+      "explanation": "Venera Quyoshga eng yaqin bo'lmasa-da, uning qalin issiqxona gazlaridan iborat atmosferasi tufayli eng issiq (460°C+) sayyoradir.",
+      "order_num": 47
+    },
+    {
+      "text": "Atom yadrosida qaysi subatom zarrachalar joylashgan?",
+      "options": "[{\"id\":\"a\",\"text\":\"Faqat elektronlar\"},{\"id\":\"b\",\"text\":\"Protonlar va elektronlar\"},{\"id\":\"c\",\"text\":\"Protonlar va neytronlar\"},{\"id\":\"d\",\"text\":\"Neytronlar va elektronlar\"}]",
+      "correct_option": "c",
+      "explanation": "Atom markazidagi yadro protonlar va neytronlardan tashkil topgan, elektronlar esa yadro atrofida aylanadi.",
+      "order_num": 48
+    },
+    {
+      "text": "Neytron zarrachasini kashf etgan olim kim?",
+      "options": "[{\"id\":\"a\",\"text\":\"Ernest Rutherford\"},{\"id\":\"b\",\"text\":\"J.J. Thomson\"},{\"id\":\"c\",\"text\":\"James Chadwick\"},{\"id\":\"d\",\"text\":\"Niels Bohr\"}]",
+      "correct_option": "c",
+      "explanation": "Djeyms Chedvik 1932-yilda neytronni kashf etgan va ushbu kashfiyoti uchun Nobel mukofotiga sazovor bo'lgan.",
+      "order_num": 49
+    },
+    {
+      "text": "Suv molekulasidagi vodorod va kislorod atomlari nisbati qanday?",
+      "options": "[{\"id\":\"a\",\"text\":\"1:1\"},{\"id\":\"b\",\"text\":\"2:1\"},{\"id\":\"c\",\"text\":\"1:2\"},{\"id\":\"d\",\"text\":\"3:1\"}]",
+      "correct_option": "b",
+      "explanation": "H2O formulasidan ko'rinib turibdiki, 2 ta vodorod atomiga 1 ta kislorod atomi to'g'ri keladi.",
+      "order_num": 50
+    },
+    {
+      "text": "Dunyodagi eng chuqur okean botiqligi qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Puerto-Riko botiqligi\"},{\"id\":\"b\",\"text\":\"Yava botiqligi\"},{\"id\":\"c\",\"text\":\"Mariana botiqligi\"},{\"id\":\"d\",\"text\":\"Sonda botiqligi\"}]",
+      "correct_option": "c",
+      "explanation": "Mariana botiqligi Tinch okeanida joylashgan bo'lib, uning eng chuqur nuqtasi taxminan 11,000 metrga yetadi.",
+      "order_num": 51
+    },
+    {
+      "text": "Insoniyat tarixdagi birinchi marta Oyga qaysi yili qadam qo'ygan?",
+      "options": "[{\"id\":\"a\",\"text\":\"1961\"},{\"id\":\"b\",\"text\":\"1965\"},{\"id\":\"c\",\"text\":\"1969\"},{\"id\":\"d\",\"text\":\"1972\"}]",
+      "correct_option": "c",
+      "explanation": "1969-yil 20-iyul kuni 'Apollon-11' missiyasi doirasida Nil Armstrong Oyga birinchi bo'lib qadam qo'ydi.",
+      "order_num": 52
+    },
+    {
+      "text": "Dunyodagi eng katta issiq sahro qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Gobi\"},{\"id\":\"b\",\"text\":\"Kalahari\"},{\"id\":\"c\",\"text\":\"Sahroi Kabir (Sahara)\"},{\"id\":\"d\",\"text\":\"Atakama\"}]",
+      "correct_option": "c",
+      "explanation": "Sahroi Kabir Shimoliy Afrikada joylashgan va dunyodagi eng katta issiq cho'l hisoblanadi.",
+      "order_num": 53
+    },
+    {
+      "text": "Buyuk Ipak yo'li qaysi mamlakatdan boshlangan?",
+      "options": "[{\"id\":\"a\",\"text\":\"Hindiston\"},{\"id\":\"b\",\"text\":\"Eron\"},{\"id\":\"c\",\"text\":\"Xitoy\"},{\"id\":\"d\",\"text\":\"Misr\"}]",
+      "correct_option": "c",
+      "explanation": "Buyuk Ipak yo'li Xitoyning Chanan (hozirgi Sian) shahridan boshlanib, Yevropagacha davom etgan.",
+      "order_num": 54
+    },
+    {
+      "text": "Maydoniga ko'ra dunyodagi eng kichik mustaqil davlat qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Monako\"},{\"id\":\"b\",\"text\":\"Vatikan\"},{\"id\":\"c\",\"text\":\"San-Marino\"},{\"id\":\"d\",\"text\":\"Lixtenshteyn\"}]",
+      "correct_option": "b",
+      "explanation": "Vatikan davlati Rim shahri ichida joylashgan va maydoni bor-yo'g'i 0.49 kvadrat kilometrni tashkil etadi.",
+      "order_num": 55
+    },
+    {
+      "text": "AQShning birinchi prezidenti kim bo'lgan?",
+      "options": "[{\"id\":\"a\",\"text\":\"Tomas Jefferson\"},{\"id\":\"b\",\"text\":\"Avraam Linkoln\"},{\"id\":\"c\",\"text\":\"Jorj Vashington\"},{\"id\":\"d\",\"text\":\"Benjamin Franklin\"}]",
+      "correct_option": "c",
+      "explanation": "Jorj Vashington 1789-1797 yillarda AQShning birinchi prezidenti sifatida xizmat qilgan.",
+      "order_num": 56
+    },
+    {
+      "text": "Dunyodagi eng uzun daryo qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Amazonka\"},{\"id\":\"b\",\"text\":\"Nil\"},{\"id\":\"c\",\"text\":\"Yanszi\"},{\"id\":\"d\",\"text\":\"Missisipi\"}]",
+      "correct_option": "b",
+      "explanation": "Aksariyat geografik manbalarga ko'ra, Afrikadagi Nil daryosi (6650 km) uzunligi bo'yicha dunyoda birinchi o'rinda turadi.",
+      "order_num": 57
+    },
+    {
+      "text": "Evropa Uyg'onish davri (Renessans) ilk bor qaysi mamlakatda boshlangan?",
+      "options": "[{\"id\":\"a\",\"text\":\"Fransiya\"},{\"id\":\"b\",\"text\":\"Angliya\"},{\"id\":\"c\",\"text\":\"Italiya\"},{\"id\":\"d\",\"text\":\"Olmanya\"}]",
+      "correct_option": "c",
+      "explanation": "Renessans davri XIV asrda Italiyaning Florensiya shahrida boshlangan.",
+      "order_num": 58
+    },
+    {
+      "text": "Janubiy Amerikaning eng katta mamlakati qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Argentina\"},{\"id\":\"b\",\"text\":\"Kolumbiya\"},{\"id\":\"c\",\"text\":\"Braziliya\"},{\"id\":\"d\",\"text\":\"Peru\"}]",
+      "correct_option": "c",
+      "explanation": "Braziliya Janubiy Amerika qit'asining deyarli yarmini egallaydi va eng katta davlatidir.",
+      "order_num": 59
+    },
+    {
+      "text": "Buyuk Xitoy devori qaysi bosqinchilardan himoyalanish uchun qurilgan?",
+      "options": "[{\"id\":\"a\",\"text\":\"Rimliklar\"},{\"id\":\"b\",\"text\":\"Xunlar va ko'chmanchi qabilalar\"},{\"id\":\"c\",\"text\":\"Forslar\"},{\"id\":\"d\",\"text\":\"Yaponlar\"}]",
+      "correct_option": "b",
+      "explanation": "Xitoy imperatorlari devorni shimoldan ko'chmanchi qabilalar (xunlar va boshqalar) hujumidan saqlanish uchun qurdirganlar.",
+      "order_num": 60
+    },
+    {
+      "text": "Qaysi tabiiy oziq-ovqat mahsuloti hech qachon buzilmaydi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Gurch\"},{\"id\":\"b\",\"text\":\"Asal\"},{\"id\":\"c\",\"text\":\"Zaytunyog'i\"},{\"id\":\"d\",\"text\":\"Qurut\"}]",
+      "correct_option": "b",
+      "explanation": "Asal past namlik va yuqori kislotalilikka ega bo'lgani uchun bakteriyalar ko'paymaydi va ming yillab saqlanishi mumkin.",
+      "order_num": 61
+    },
+    {
+      "text": "Sakkizoyoqning (osminog) nechta yuragi bor?",
+      "options": "[{\"id\":\"a\",\"text\":\"1 ta\"},{\"id\":\"b\",\"text\":\"2 ta\"},{\"id\":\"c\",\"text\":\"3 ta\"},{\"id\":\"d\",\"text\":\"4 ta\"}]",
+      "correct_option": "c",
+      "explanation": "Sakkizoyoqlarda 3 ta yurak bor: ikkitasi jabralarga qon haydaydi, bittasi esa qolgan tana a'zolariga.",
+      "order_num": 62
+    },
+    {
+      "text": "Yoz faslida Eyfel minorasining balandligi nima sababdan taxminan 15 sm ga uzayadi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Shamol kuchi ta'sirida\"},{\"id\":\"b\",\"text\":\"Metalning issiqda kengayishi sababli\"},{\"id\":\"c\",\"text\":\"Bo'yoq qatlamlari hisobiga\"},{\"id\":\"d\",\"text\":\"Poydevor bosimi kamaygani uchun\"}]",
+      "correct_option": "b",
+      "explanation": "Issiqlik ta'sirida metallar kengayadi, bu hodisa termal kengayish deb ataladi.",
+      "order_num": 63
+    },
+    {
+      "text": "Quyosh tizimidagi qaysi sayyora soat mili yo'nalishi bo'yicha (teskari) aylanadi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Mars\"},{\"id\":\"b\",\"text\":\"Venera\"},{\"id\":\"c\",\"text\":\"Yupiter\"},{\"id\":\"d\",\"text\":\"Merkuriy\"}]",
+      "correct_option": "b",
+      "explanation": "Aksariyat sayyoralar soat miliga qarshi aylanadi, lekin Venera o'z o'qi atrofida soat mili bo'ylab (retrograd) aylanadi.",
+      "order_num": 64
+    },
+    {
+      "text": "Inson tanasidagi eng kichik suyak qayerda joylashgan?",
+      "options": "[{\"id\":\"a\",\"text\":\"Qo'l panjasida\"},{\"id\":\"b\",\"text\":\"Quloqda\"},{\"id\":\"c\",\"text\":\"Oyoq barmog'ida\"},{\"id\":\"d\",\"text\":\"Burunda\"}]",
+      "correct_option": "b",
+      "explanation": "Inson qulog'i ichidagi 'uzangicha' (stapes) suyagi atigi 3 mm bo'lib, tanadagi eng kichik suyakdir.",
+      "order_num": 65
+    },
+    {
+      "text": "Yorug'lik yili (Light-year) nimani o'lchash uchun ishlatiladigan birlik?",
+      "options": "[{\"id\":\"a\",\"text\":\"Vaqtni\"},{\"id\":\"b\",\"text\":\"Masofani\"},{\"id\":\"c\",\"text\":\"Yorug'lik intensivligini\"},{\"id\":\"d\",\"text\":\"Tezlikni\"}]",
+      "correct_option": "b",
+      "explanation": "Yorug'lik yili - bu yorug'likning bir yil davomida bosib o'tadigan masofasi (taxminan 9.46 trillion km).",
+      "order_num": 66
+    },
+    {
+      "text": "Inson tanasidagi eng kuchli (eng ko'p bosim beradigan) muskul qaysi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Yurak muskuli\"},{\"id\":\"b\",\"text\":\"Chaynash muskuli (Masseter)\"},{\"id\":\"c\",\"text\":\"Til\"},{\"id\":\"d\",\"text\":\"Soni muskuli\"}]",
+      "correct_option": "b",
+      "explanation": "Jag'dagi chaynash muskuli (masseter) beradigan kuchi va bosimi bo'yicha tanadagi eng kuchli muskuldir.",
+      "order_num": 67
+    },
+    {
+      "text": "Dunyodagi eng baland sharshara bo'lmish Anxel qaysi mamlakatda joylashgan?",
+      "options": "[{\"id\":\"a\",\"text\":\"Braziliya\"},{\"id\":\"b\",\"text\":\"Kanada\"},{\"id\":\"c\",\"text\":\"Venesuela\"},{\"id\":\"d\",\"text\":\"AQSh\"}]",
+      "correct_option": "c",
+      "explanation": "Anxel sharsharasi Venesuelada joylashgan bo'lib, uning balandligi 979 metrni tashkil etadi.",
+      "order_num": 68
+    },
+    {
+      "text": "Moviy kitning yuragi taxminan qanday kattalikda bo'ladi?",
+      "options": "[{\"id\":\"a\",\"text\":\"Futbol to'pidek\"},{\"id\":\"b\",\"text\":\"Kichik avtomobil (yoki golf mashinasi) dek\"},{\"id\":\"c\",\"text\":\"Chelakdek\"},{\"id\":\"d\",\"text\":\"Inson mushtidek\"}]",
+      "correct_option": "b",
+      "explanation": "Moviy kitning yuragi juda katta bo'lib, og'irligi 180 kg ga yetishi mumkin va o'lchami kichik mashinaga teng.",
+      "order_num": 69
+    },
+    {
+      "text": "Dunyodagi birinchi sun'iy yo'ldosh (Sputnik-1) qaysi mamlakat tomonidan koinotga uchirilgan?",
+      "options": "[{\"id\":\"a\",\"text\":\"AQSh\"},{\"id\":\"b\",\"text\":\"SSSR (Sobiq Ittifoq)\"},{\"id\":\"c\",\"text\":\"Buyuk Britaniya\"},{\"id\":\"d\",\"text\":\"Xitoy\"}]",
+      "correct_option": "b",
+      "explanation": "1957-yil 4-oktabrda SSSR dunyodagi birinchi sun'iy yo'ldosh Sputnik-1 ni orbitaga olib chiqdi.",
+      "order_num": 70
+    }
+  ]
+}

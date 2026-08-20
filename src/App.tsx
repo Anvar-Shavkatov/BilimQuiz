@@ -13,6 +13,12 @@ import NotFound from './pages/NotFound';
 import Profile from './pages/Profile';
 import TeacherDashboard from './pages/TeacherDashboard';
 import Leaderboard from './pages/Leaderboard';
+import HowItWorks from './pages/HowItWorks';
+import Flashcards from './pages/Flashcards';
+import SmartReview from './pages/SmartReview';
+import Battle from './pages/Battle';
+import FeedbackModal from './components/FeedbackModal';
+import AIChatbot from './components/AIChatbot';
 import { useAuthStore } from './store/useAuthStore';
 
 function App() {
@@ -43,6 +49,10 @@ function App() {
               <Route path="/profile" element={<Profile />} />
               <Route path="/dashboard" element={<TeacherDashboard />} />
               <Route path="/leaderboard" element={<Leaderboard />} />
+              <Route path="/how-it-works" element={<HowItWorks />} />
+              <Route path="/flashcards" element={<Flashcards />} />
+              <Route path="/review" element={<SmartReview />} />
+              <Route path="/battle" element={<Battle />} />
               {/* Catch-all 404 Route */}
               <Route path="*" element={<NotFound />} />
             </Routes>
@@ -50,7 +60,11 @@ function App() {
 
           <Newsletter />
           <Footer />
-        </div>
+        
+        {/* Global Modals & Components */}
+        <FeedbackModal />
+        <AIChatbot />
+      </div>
 
         <CookieBanner />
         <ScrollToTop />

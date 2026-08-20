@@ -26,6 +26,7 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Dasturlash', path: '/#subjects' },
     { name: 'Reyting', path: '/leaderboard' },
+    { name: 'Xatolar', path: '/review' },
     { name: 'Qanday ishlaydi', path: '/how-it-works' },
   ];
 

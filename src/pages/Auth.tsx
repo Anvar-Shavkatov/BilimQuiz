@@ -63,7 +63,23 @@ export default function Auth() {
           
           if (profileError) {
             console.error("Profile yaratishda xatolik:", profileError);
-            // Don't throw, they are logged in anyway. They just might lack a profile record
+          } else {
+            // Referal tizimini tekshirish
+            const searchParams = new URLSearchParams(window.location.search);
+            const refId = searchParams.get('ref');
+            
+            if (refId && refId !== authData.user!.id) {
+              try {
+                // Referal qilgan odamning profilini topish
+                const { data: refUser } = await supabase.from('profiles').select('score').eq('id', refId).single();
+                if (refUser) {
+                  // Ball qo'shish
+                  await supabase.from('profiles').update({ score: refUser.score + 50 }).eq('id', refId);
+                }
+              } catch (e) {
+                console.error("Referal tizimida xatolik", e);
+              }
+            }
           }
           
           navigate('/');

@@ -17,9 +17,10 @@ interface AuthState {
   setUser: (user: User | null) => void;
   logout: () => Promise<void>;
   initialize: () => void;
+  updateProfile: (updates: Partial<User>) => Promise<{ error: any }>;
 }
 
-export const useAuthStore = create<AuthState>((set) => ({
+export const useAuthStore = create<AuthState>((set, get) => ({
   user: null,
   isAuthenticated: false,
   isLoading: true,
@@ -27,6 +28,16 @@ export const useAuthStore = create<AuthState>((set) => ({
   logout: async () => {
     await supabase.auth.signOut();
     set({ user: null, isAuthenticated: false });
+  },
+  updateProfile: async (updates) => {
+    const user = get().user;
+    if (!user) return { error: new Error("User not found") };
+
+    const { error } = await supabase.from('profiles').update(updates).eq('id', user.id);
+    if (!error) {
+      set({ user: { ...user, ...updates } as User });
+    }
+    return { error };
   },
   initialize: () => {
     // 1. Get initial session
