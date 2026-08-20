@@ -76,3 +76,14 @@ bot.launch();
 // Xatoliklarni ushlab qolish
 process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
+
+// 5. Cloud xizmatlar (Render, Heroku kabi) uchun portni eshitish (shartli)
+// Agar bot serverda ishlayotgan bo'lsa, xizmat o'chib qolmasligi uchun portni ochib qo'yamiz.
+import http from 'http';
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Bot ishlamoqda!');
+}).listen(PORT, () => {
+  console.log(`Pinger server ${PORT}-portda ishga tushdi.`);
+});
