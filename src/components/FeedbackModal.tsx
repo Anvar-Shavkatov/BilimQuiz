@@ -105,7 +105,7 @@ export default function FeedbackModal() {
                   Yoki bevosita Telegram bot orqali yozing:
                 </p>
                 <a
-                  href="https://t.me/BilimQuizBot" // Foydalanuvchi buni o'zgartiradi
+                  href="https://t.me/Bilimquiz_AloqaBot" // Foydalanuvchi buni o'zgartiradi
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-[#0088cc] text-white font-bold py-2 rounded-lg hover:bg-[#0077b3] transition flex items-center justify-center gap-2 text-sm"

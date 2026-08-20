@@ -84,12 +84,12 @@ export default function Footer() {
           <div className="flex-shrink-0 text-center md:text-left">
             <p className="text-arena-textMuted text-sm mb-3">Yoki Telegram orqali bog'laning:</p>
             <a 
-              href="https://t.me/BilimQuizBot" 
+              href="https://t.me/Bilimquiz_AloqaBot" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#0088cc] text-white font-bold rounded-lg hover:bg-[#0077b3] transition-colors"
             >
-              <Send className="w-4 h-4" /> @BilimQuizBot
+              <Send className="w-4 h-4" /> @Bilimquiz_AloqaBot
             </a>
           </div>
         </div>

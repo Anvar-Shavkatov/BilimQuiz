@@ -70,3 +70,15 @@ CREATE POLICY "Users can insert own results." ON public.results FOR INSERT WITH 
 
 -- Test ma'lumotlarini kiritish (JavaScript Quiz uchun)
 -- O'zingiz tahrirlashingiz yoki keyinroq saytdan qo'shishingiz mumkin.
+
+-- 5. Feedbacks jadvali
+CREATE TABLE IF NOT EXISTS public.feedbacks (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  user_id UUID REFERENCES public.profiles(id),
+  message TEXT NOT NULL,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW())
+);
+
+ALTER TABLE public.feedbacks ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Anyone can insert feedbacks." ON public.feedbacks FOR INSERT WITH CHECK (true);
+CREATE POLICY "Admins can view feedbacks." ON public.feedbacks FOR SELECT USING (true);
